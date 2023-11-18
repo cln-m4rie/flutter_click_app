@@ -43,18 +43,12 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = startCount;
 
   void _incrementCounter() {
-    if (_counter == maxCount) {
-      return;
-    }
     setState(() {
       _counter++;
     });
   }
 
   void _decrementCounter() {
-    if (_counter == startCount) {
-      return;
-    }
     setState(() {
       _counter--;
     });
